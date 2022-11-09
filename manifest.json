@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "WatchList",
-  "description": "Animepahe watchlist",
-  "version": "1.0",
+  "version": "0.1.0",
+  "name": "Anime Watchlist",
+  "description": "Animepahe watchlist extension",
   "action": {
     "default_popup": "popup.html",
     "default_title": "Animepahe watchlist",
@@ -18,5 +18,29 @@
     "32": "icons/icon32.png",
     "48": "icons/icon48.png",
     "128": "icons/icon128.png"
-  }
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://animepahe.com/*",
+        "https://animepahe.ru/*",
+        "https://animepahe.org/*"
+      ],
+      "js": [
+        "js/content.js"
+      ],
+      "css": [
+        "css/output.css"
+      ],
+      "type": "module"
+    }
+  ],
+  "permissions": [
+    "storage"
+  ],
+  "host_permissions": [
+    "https://animepahe.com/*",
+    "https://animepahe.ru/*",
+    "https://animepahe.org/*"
+  ]
 }

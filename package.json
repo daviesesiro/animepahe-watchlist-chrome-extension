@@ -1,10 +1,10 @@
 {
   "name": "animepahe-watchlist-chrome-extension",
   "version": "1.0.0",
-  "description": "",
+  "description": "Animepahe washlist extension",
   "main": "tailwind.config.js",
   "scripts": {
-    "build:watch": "npx tailwindcss -i ./public/css/tailwindcss.css -o ./public/css/main.css --watch"
+    "build:watch": "npx tailwindcss -i ./css/styles.css -o ./css/output.css --watch"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/daviesesiro/animepahe-watchlist-chrome-extension/issues"
   },
-  "homepage": "https://github.com/daviesesiro/animepahe-watchlist-chrome-extension#readme"
+  "homepage": "https://github.com/daviesesiro/animepahe-watchlist-chrome-extension#readme",
+  "dependencies": {
+    "@types/chrome": "^0.0.200"
+  }
 }

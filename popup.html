@@ -1,17 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link href="public/icons/icon-16.png" rel="icon" type="image/png">
-  <link href="public/css/main.css" rel="stylesheet" type="text/css" />
-  <script defer src="public/js/popup.js"></script>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link href="icons/icon16.png" rel="icon" type="image/png" />
+  <link href="css/output.css" rel="stylesheet" type="text/css" />
+  <script defer type="module" src="js/popup.js"></script>
 
   <title>Animepahe watchlist</title>
 </head>
-<body>
-  Hello world from animepahe extension
+
+<body class="w-[500px] bg-black border-2 border-primary p-2">
+  <div class="flex justify-between items-center">
+    <h1 class="text-lg mb-2 text-white">Watchlist</h1>
+    <input type="text" id="search" class="w-32 p-1 outline-none focus:ring focus:w-52 duration-200 focus:ring-primary"
+      placeholder="Search" />
+  </div>
+  <div id="list" class="overflow-y-auto h-96 flex flex-col space-y-2 text-white"></div>
 </body>
+
 </html>
